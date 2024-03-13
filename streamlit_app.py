@@ -1,6 +1,6 @@
 import pandas as pd
 import streamlit as st
-from mcdm.ahp import AHPGaussiano
+from functions import AHPGaussiano
 
 
 def load_data():
