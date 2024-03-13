@@ -1,2 +1,3 @@
 pandas~=1.4.3
 streamlit~=1.32.1
+pip install git+https://github.com/MarioLisboaJr/multiple_criteria_decision.git
