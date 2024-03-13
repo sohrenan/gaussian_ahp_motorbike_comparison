@@ -1,3 +1,9 @@
-modelo,cilindrada,potencia,torque,consumo,peso,tanque
-ninja_400,321,42,3,28,171,14.2
-r3,399,48,3.9,22,168,14
+modelo,cilindrada,potencia,torque,peso,tanque
+Kawasaki Ninja 300,297,39,2.80,164,17
+Kawasaki Ninja 400,399,48,3.9,168,14
+Yamaha MT-03,321,42,3,168,14
+Yamaha MT-07,689,74.8,6.9,183,14
+Yamaha MT-09,847,115,8.9,193,16.8
+Yamaha R15,155,18.8,1.5,141,11
+Yamaha R3,320,42.01,3.2,170,14
+Yamaha Tracer 900 GT ABS,847,115,8.9,215,20.6

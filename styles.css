@@ -1,0 +1,28 @@
+/* styles.css */
+
+.st-emotion-cache-x0q64j.ef3psqc12 {
+    padding: 8px 16px;
+    background-color: black;
+    color: white;
+    border: 1px solid white; /* Adicionando borda fina branca */
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transição apenas para background-color e color */
+}
+
+.st-emotion-cache-x0q64j.ef3psqc12:hover {
+    background-color: white;
+    color: black;
+}
+
+.st-emotion-cache-1umffu5.e1y5xkzn3 {
+    text-align: center;
+}
+.st-emotion-cache-1v0mbdj.e115fcil1:hover .stImage_expandButton {
+    display: none !important;
+}
+
+body {
+    background-image: url('background.jpg');
+    background-size: cover;
+}
