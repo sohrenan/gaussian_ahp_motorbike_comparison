@@ -10,22 +10,7 @@ def display_header(title):
     st.markdown(f"<h1 style='text-align: center;font-size:40px;'>{title}</h1>", unsafe_allow_html=True)
 
 
-def min_max_scaler(values):
-    results = []
-    X = values
-    min_val = min(X)
-    max_val = max(X)
 
-    if max_val == min_val:
-
-        for i in range(len(X)):
-            results.append(0.5)
-    else:
-        for i in range(len(X)):
-            X_std = (X[i] - min_val) / (max_val - min_val)
-            results.append(X_std)
-
-    return results
 
 
 def display_comparison_columns(bike_names):
