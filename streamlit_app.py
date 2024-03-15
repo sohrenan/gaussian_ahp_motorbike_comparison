@@ -10,6 +10,22 @@ def display_header(title):
     st.markdown(f"<h1 style='text-align: center;font-size:40px;'>{title}</h1>", unsafe_allow_html=True)
 
 
+def min_max_scaler(values):
+    results = []
+    X = values
+    min_val = min(X)
+    max_val = max(X)
+
+    if max_val == min_val:
+
+        for i in range(len(X)):
+            results.append(0.5)
+    else:
+        for i in range(len(X)):
+            X_std = (X[i] - min_val) / (max_val - min_val)
+            results.append(X_std)
+
+    return results
 
 
 def display_comparison_columns(bike_names):
@@ -19,22 +35,18 @@ def display_comparison_columns(bike_names):
         display_header("Moto 1")
         modelo_1 = st.selectbox('Selecione a primeira moto', bike_names)
         preco_1 = st.number_input(f"Por qual preço você pretende comprar o primeiro modelo?",min_value=100)
-        kilometragem_1 = st.number_input(f"Qual a kilometragem do primeiro modelo?")
-        kilometragem_1 = int(kilometragem_1)
-        if kilometragem_1 == 0:
-            kilometragem_1 = 1
+
 
 
     with col3:
         display_header("Moto 2")
         modelo_2 = st.selectbox('Selecione a segunda moto', bike_names)
         preco_2 = st.number_input(f"Por qual preço você pretende comprar o segundo modelo?",min_value=100)
-        kilometragem_2 = st.number_input(f"Qual a kilometragem do segundo modelo?")
-        kilometragem_2 = int(kilometragem_2)
-        if kilometragem_2 == 0:
-            kilometragem_2 = 1
 
-    return modelo_1, preco_1, kilometragem_1, modelo_2, preco_2, kilometragem_2
+
+
+
+    return modelo_1, preco_1, modelo_2, preco_2
 
 def display_comparison_button():
     with st.container():
@@ -47,8 +59,8 @@ def display_comparison_button():
         predict_button = st.button('Comparar')
         return predict_button
 
-def perform_comparison(df, modelo_1, preco_1, kilometragem_1, modelo_2, preco_2, kilometragem_2):
-    criterio = ['preco','kilometragem']
+def perform_comparison(df, modelo_1, preco_1, modelo_2, preco_2):
+    criterio = ['preco']
     dados = df[df['modelo'].isin([modelo_1, modelo_2])]
 
     # Add missing columns if not present
@@ -67,10 +79,9 @@ def perform_comparison(df, modelo_1, preco_1, kilometragem_1, modelo_2, preco_2,
     dados.loc[modelo_1, criterio[0]] = preco_1
     dados.loc[modelo_2, criterio[0]] = preco_2
 
-    dados.loc[modelo_1, criterio[1]] = kilometragem_1
-    dados.loc[modelo_2, criterio[1]] = kilometragem_2
 
-    minimizar_criterio = ['preco','peso','kilometragem']
+
+    minimizar_criterio = ['preco','peso']
     ahp_gaussiano = AHPGaussiano(dados, minimizar_criterio)
     return ahp_gaussiano.preferencia_global()
 
@@ -90,11 +101,11 @@ def main():
 
 
     display_header("Comparador de Custo/Beneficio de Motos")
-    modelo_1, preco_1, kilometragem_1, modelo_2, preco_2, kilometragem_2 = display_comparison_columns(bike_names)
+    modelo_1, preco_1, modelo_2, preco_2 = display_comparison_columns(bike_names)
     predict_button = display_comparison_button()
 
     if predict_button:
-        escolha_ahp_gaussiano = perform_comparison(df, modelo_1, preco_1, kilometragem_1, modelo_2, preco_2, kilometragem_2)
+        escolha_ahp_gaussiano = perform_comparison(df, modelo_1, preco_1, modelo_2, preco_2)
         st.write(f'Melhor escolha é {escolha_ahp_gaussiano.index[0]} com peso {escolha_ahp_gaussiano.iloc[0][1]:.2f}')
         st.write(escolha_ahp_gaussiano, width=0)  # Set width to 0 to make it fill the available space
 
