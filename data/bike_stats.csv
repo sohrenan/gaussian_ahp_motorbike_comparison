@@ -1,4 +1,50 @@
 modelo,cilindrada,potencia,torque,peso,tanque
+Bajaj Dominar 160,160,17,1.4,151,12
+Bajaj Dominar 200,199.5,24,1.8,157,12
+Bajaj Dominar 400,373,40,3.5,192,13
+BMW F750 GS,853,77,8.4,226,15
+BMW F850 GS,853,80,9.3,233,15
+BMW F900 R,895,85,8.8,211,13
+BMW G310 GS,313,34,2.8,175,11
+BMW G310 R ,313,34,2.9,164,11
+BMW K1600 B,1649,160,17.8,356,26.5
+BMW K1600 GTL,1649,160,17.8,358,26.5
+BMW R1250 GS,1254,136,14.3,249,20
+BMW R1250 RT,1254,136,14.3,282,25
+BMW R18,1802,91,15.8,345,16
+BMW S1000 RR,999,210,11.3,197,16.5
+Ducati DesertX,937,110,9.2,223,21
+Ducati Diavel 1260 S,1262,158,12.9,218,17
+Ducati Monster,937,111,9.5,166,14
+Ducati Multistrada V2 S,937,113,9.4,202,20
+Ducati Panigale V4 S,1103,214,12.6,174,16
+Ducati Streetfighter V4 S,1103,208,12.6,205,16
+Ducati XDiavel S,1262,152,12.6,220,18
+Haojue Chopper Road 150,149,11.27,1.16,130,9.5
+Haojue DK 150,149,11.27,1.16,135,12.5
+Haojue DK 160,162.4,15,1.43,135,16.5
+Haojue DR 160,162,15,1.42,148,12
+Haojue Lindy 125,124,8.4,0.92,110,11
+Haojue Master Ride 150,149,12.1,1.16,146,10.7
+Haojue Nex 115,113,9,0.92,102,4.2
+Haojue NK 150,149,12,1.24,139,12.2
+Haojue VR 150,150,10.8,1.17,120,6.44
+Harley Davidson Breakout 117,1923,102,16.8,310,18.9
+Harley Davidson CVO Road Glide,1977,118,18.5,393,22.7
+Harley Davidson CVO Road Glide ST,1977,126,19.3,380,22.7
+Harley Davidson CVO Street Glide,1977,118,18.5,380,22.7
+Harley Davidson Fat Bob 114,1868,93,15.5,269,13.2
+Harley Davidson Fat Boy 114,1868,94,15.5,304,18.9
+Harley Davidson Heritage Classic,1868,94,15.5,330,18.9
+Harley Davidson Low Rider S,1923,105,16.8,308,18.9
+Harley Davidson Low Rider ST,1923,105,16.8,327,18.9
+Harley Davidson Pan America 1250 Special,1252,150,12.8,229,21.2
+Harley Davidson Road Glide,1923,107,17.7,380,22.7
+Harley Davidson Road Glide Limited,1868,87,16,423,22.7
+Harley Davidson Road King Special,1868,93,15.8,366,22.7
+Harley Davidson Sportster S,1252,121,12.5,221,11.8
+Harley Davidson Street Glide,1923,107,17.7,368,22.7
+Harley Davidson Ultra Limited,1868,87,16,416,22.7
 Honda ADV - 2024,149.3,13.2,1.38,127,8
 Honda Biz 110i - 2024,109.1,8.33,0.89,97,5.1
 Honda Biz 125 - 2024,124.9,9.2,01.04,100,5.1
@@ -43,9 +89,53 @@ Kawasaki Z650 - 2024,649,68,6.5,188,15
 Kawasaki Z650RS - 2024,649,68,6.7,187,12
 Kawasaki Z900 - 2024,948,125,10.1,212,17
 Kawasaki Z900RS - 2024,948,109,9.7,215,17
-Yamaha MT-03 - 2024,321,42,3,168,14
-Yamaha MT-07 - 2024,689,74.8,6.9,183,14
-Yamaha MT-09 - 2024,847,115,8.9,193,16.8
+Royal Enfield Classic 350,349,20,2.7,195,13
+Royal Enfield Continental GT 650,648,34.9,52.3,214,12.5
+Royal Enfield Himalayan,411,24.5,3.2,191,15
+Royal Enfield Hunter 350,349,14.87,2.7,181,13
+Royal Enfield Interceptor 650,648,34.9,52.3,217,13.7
+Royal Enfield Meteor 350,349,20.2,2.7,191,15
+Royal Enfield Scram 411,411,17.8,3.2,194,15
+Suzuki GSX-R 1000R,999.8,202,12,203,16
+Suzuki GSX-S 1000,999,152,10.8,214,19
+Suzuki GSX-S 1000 GT,999,152,10.8,226,19
+Suzuki GSX-S 750,749,114,8.26,213,16
+Suzuki Hayabusa,1340,190,15.3,264,20
+Suzuki V-Strom 1050,1037,107,10.5,225,20
+Suzuki V-Strom 1050XT,1037,107,10.5,225,20
+Suzuki V-Strom 650XT,645,71,6.32,213,20
+Triumph Bonneville Bobber,2300,78,10.6,251,12
+Triumph Bonneville Speedmaster,1200,78,10.6,263,12
+Triumph Bonneville T100,900,65,8,228,14.5
+Triumph Bonneville T120,1200,80,10.5,236,14.5
+Triumph Rocket 3 GT,2458,165,22.1,291,18
+Triumph Scrambler 1200 XE,1200,90,11,207,16
+Triumph Scrambler 400X,398.15,40,3.75,179,13
+Triumph Scrambler 900,900,65,8,223,12
+Triumph Speed 400,398.15,40,3.75,170,13
+Triumph Speed Twin 900,900,65,8,216,12
+Triumph Tiger 1200,1160,150,13,256,30
+Triumph Tiger Sport 660,660,81,6.4,206,17.2
+Triumph Trident 660,660,81,6.4,189,14
+Triumph Triple 765,765,120,8,189,15
+Yamaha Crosser S ABS,149,12.4,1.3,137,12
+Yamaha Crosser Z ABS,149,12.4,1.3,137,12
+Yamaha Factor 125i UBS,125,11.1,1.2,125,15.7
+Yamaha Factor 150 ED UBS,149,12.4,1.3,127,15.7
+Yamaha Fazer 150 UBS,149,12.4,1.3,130,15.2
+Yamaha Fazer FZ15 ABS,149,12.4,1.3,135,11.9
+Yamaha Fazer FZ25 ABS,249,21.5,2.1,149,14
+Yamaha FLUO ABS,125,9.5,1,102,4.2
+Yamaha lander 250 ABS,249,20.7,2.1,153,14
+Yamaha MT-03 ABS,321,42,3,169,14.2
+Yamaha MT-07 ABS,689,74.8,6.9,183,14.2
+Yamaha MT-09 ABS,847,115,8.9,193,14
+Yamaha NEO 125 UBS,125,9.8,1,97,4.2
+Yamaha Nmax Connected 160 ABS,155,15.4,1.4,131,7.1
 Yamaha R15 - 2024,155,18.8,1.5,141,11
-Yamaha R3 - 2024,320,42.01,3.2,170,14
-Yamaha Tracer 900 GT ABS - 2024,847,115,8.9,215,20.6
+Yamaha R3 ABS,321,42,3,171,14.2
+Yamaha Tracer 900 GT ABS,847,115,8.9,215,18
+Yamaha XMAX ABS,250,22.8,2.5,179,13.2
+Zontes R310 ,7.11,3.2,2.1,19.6,14.1
+Zontes T310,7.11,3.2,2.1,9.7,18.1
+Zontes V310,7.11,3.2,2.1,23.6,13.1
